@@ -15,7 +15,7 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
+  color: #ffffff;
   font-weight: 700;
   padding: .9rem 0;
 }
@@ -42,7 +42,7 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(247, 247, 247, 0.5);
   }
   #mainNav .nav-link {
     -webkit-transition: none;
@@ -51,7 +51,7 @@
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 255, 255);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -68,15 +68,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #0c08ff;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #0c08ff;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #0c08ff;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #0c08ff;
   }
 }
 
@@ -86,7 +86,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 0, 0, 0.979)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -99,8 +99,9 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(rgb(255, 254, 254), rgba(255, 255, 255, 0)); */
+  /* -webkit-text-fill-color: transparent; */
+  color: rgb(255, 255, 255);
   -webkit-background-clip: text;
 }
 
