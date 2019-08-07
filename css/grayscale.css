@@ -201,7 +201,7 @@
     width: 30%;
   }
 }
-
+/* 
 .signup-section {
   padding: 10rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
@@ -266,11 +266,12 @@
 
 .contact-section .social a:active {
   color: #fff;
-}
+} */
 
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
+  background-image: url('img/logo.png');
 }
 
 a {
@@ -300,7 +301,7 @@ footer {
 
 div.gallery {
 margin: 5px;
-border: 1px solid #ccc;
+border: 1px solid rgb(212, 166, 166);
 float: left;
 width: 180px;
 }
