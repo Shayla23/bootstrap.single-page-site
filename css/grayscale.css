@@ -4,6 +4,12 @@ body {
   background-attachment: fixed;
   background-size: 100% auto;
 }
+.registration {
+  background: transparent !important;
+}
+.inputGroupContainer {
+  padding-bottom: 24px !important;
+}
 #mainNav {
   min-height: 56px;
   background-color: #fff;
