@@ -4,6 +4,17 @@ body {
   background-attachment: fixed;
   background-size: 100% auto;
 }
+
+.photoids {
+  display: flex;
+  left: -8%;
+  position: relative;
+}
+.photos {
+  padding-left: -15px;
+  padding-right: 15px;
+  color: white;
+}
 .registration {
   background: transparent !important;
 }
