@@ -1,3 +1,9 @@
+body {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -268,11 +274,6 @@
   color: #fff;
 } */
 
-body {
-  font-family: 'Nunito';
-  letter-spacing: 0.0625em;
-  background-image: url('img/logo.png');
-}
 
 a {
   color: #64a19d;
