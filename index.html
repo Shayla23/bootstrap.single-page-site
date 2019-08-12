@@ -26,6 +26,36 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
   <link href="css/icons.css" rel="stylesheet">
+
+  <script language="javascript" type="text/javascript">
+    var dateTime = dateTime || {
+      getMonthLastDay : function(year, month) {
+        for (var i = 29; i < 33; i++) {
+          if (new Date(year, month, i).getMonth() != month) return --i;
+        }
+      },
+      
+      getRawCalendar : function() {
+        var arr = [], cur, i;
+        with (new Date()) {
+          cur = new Date(getFullYear(), getMonth(), 1).getDay();
+          if (cur != 0) {
+            for (i = 1; i <= cur; i++) arr.push(' ');
+          }
+          
+          for (i = 1; i <= this.getMonthLastDay(getFullYear(), getMonth()); i++) {
+            arr.push(i);
+          }
+
+          return arr;
+        }
+      },
+      
+      getToday : function() {
+        return (new Date()).getDate();
+      }
+    }
+  </script>
 </head>
 <!-- header ends here -->
 <!-- --------------------------------------------------------------------------------- -->
@@ -333,6 +363,7 @@
   <!-- ==================================================================================== -->
   <!-- ==================================================================================== -->
  
+<<<<<<< HEAD
  
   <div class="month"> 
     <ul>
@@ -362,7 +393,7 @@
     <li>7</li>
     <li>8</li>
     <li>9</li>
-    <li><span class="active">10</span></li>
+    <li>10</li>
     <li>11</li>
     <li>12</li>
     <li>13</li>
@@ -392,6 +423,8 @@
   </ul>
 
 
+=======
+>>>>>>> 422922af8f6003e4d99c8151a731619ce5ddd63e
 
 </body> <!-- body ends here -->
 <!-- --------------------------------------------------------------------------------- -->
