@@ -4,7 +4,9 @@
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
-<head> <!-- header starts here -->
+
+<head>
+  <!-- header starts here -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -18,12 +20,44 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/icons.css" rel="stylesheet">
 
-</head> <!-- header ends here -->
+  <script language="javascript" type="text/javascript">
+    var dateTime = dateTime || {
+      getMonthLastDay : function(year, month) {
+        for (var i = 29; i < 33; i++) {
+          if (new Date(year, month, i).getMonth() != month) return --i;
+        }
+      },
+      
+      getRawCalendar : function() {
+        var arr = [], cur, i;
+        with (new Date()) {
+          cur = new Date(getFullYear(), getMonth(), 1).getDay();
+          if (cur != 0) {
+            for (i = 1; i <= cur; i++) arr.push(' ');
+          }
+          
+          for (i = 1; i <= this.getMonthLastDay(getFullYear(), getMonth()); i++) {
+            arr.push(i);
+          }
+
+          return arr;
+        }
+      },
+      
+      getToday : function() {
+        return (new Date()).getDate();
+      }
+    }
+  </script>
+</head>
+<!-- header ends here -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
@@ -53,29 +87,28 @@
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
-<body id="page-top"> <!-- body starts here -->
+
+<body id="page-top">
+  <!-- body starts here -->
   <!-- Navigation bar starts here -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container"></div>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#donations">Donation</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./registration.html">Application</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#highlight">Highlight</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#highlight">Highlight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="./distribution.html">Distribution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="./registration.html">Application</a>
+        </li>
+      </ul>
+    </div>
     </div>
   </nav>
   <!-- Navigation bar ends here -->
@@ -87,17 +120,14 @@
   <!-- Header begins here -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
- 
-    <body style="background-image:url('img/logo.png');"></body>
+
       <div class="mx-auto text-center">
-        <h1 class="sansserif"><i>Union Square Foundation</i></h1>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
   </header>
   <!-- Header ends here -->
 
-<br>
+
 
 
 
@@ -107,7 +137,36 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
+          <div class="photoids">
+            <div class="photos">
+              <img src="./img/terrance.jpg" width="200px" height="200px">
+              <div class="desc">Terrance Bowman</div>
+              <div class="desc">Vice President</div>
+            </div>
+            <div class="photos">
+              <img src="./img/headshot(2).jpg" width="200px" height="200px">
+              <div class="desc">Patrick Sweet</div>
+              <div class="desc">President</div>
+            </div>
+            <div class="photos">
+              <img src="./img/Frederick Jackson_Headshot.jpg" width="200px" height="200px">
+              <div class="desc">Fred Jackson</div>
+              <div class="desc">Secretary</div>
+
+            </div>
+            <div class="photos">
+              <img src="./img/headshot(4).png">
+              <div class="desc">Joseph Blue</div>
+              <div class="desc">Tresurer</div>
+            </div>
+
+          </div>
+
+
+
+
           <h2 class="text-white mb-4">About</h2>
+<<<<<<< HEAD
           <p class="text-white-50">
             Terrence He represents union (hence the opportunity for youth) he gives out scholarships for kids. Aug.3 15 year anniversary (15,000) at north temple money is for scholarships. 3 levels  Union (highest 15,000)
             Union lodge 21(1,000)
@@ -119,9 +178,30 @@
             More grass roots, people talk about it.
                </p>
       <a href= "https://www.instagram.com/unionsquarefoundation/">Instagram Page</a>
+=======
+          <p class="text-white-50">Union Square Foundation was established to enhance our local communities through programs targeted towards the
+            development of youth. In addition, we seek to assist in the helping those less fortunate, not only during the
+            holiday seasons, but also all year long. Below is a list of some examples of our ongoing community service activities
+            in New Castle County</p>
+          <a href="https://www.instagram.com/unionsquarefoundation/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="125" height="125" class="icon">
+          </a>
+          <i class="icon.png"></i>
+
+        </div>
+>>>>>>> 30b51e65f940ed2ba7b5d5b1fcd64477159fdaae
       </div>
- </div>
-     
+
+    </div>
+
+    <form action="https://paypal.me/usquarefoundation" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="X5MTA4KN6EAJL" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+        alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+
     </div>
   </section>
   <!-- About Section ends here -->
@@ -132,11 +212,11 @@
 
   <!-- ------------------------------------------------------------------------ -->
   <!-- Projects Section begins here -->
-  <section id="donations" class="projects-section bg-light">
+  <section id="donations" class="projects-section">
     <div class="container">
 
       <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
         </div>
@@ -146,10 +226,10 @@
             <p class="text-black-50 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+      <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
         </div>
@@ -164,10 +244,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
+      <!-- <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
         </div>
@@ -185,27 +265,59 @@
       </div>
 
     </div>
-  </section> <!-- Project section ends here -->
-  <!-- ------------------------------------------------------------------------ -->
+  </section> Project section ends here -->
+      <!-- ------------------------------------------------------------------------ -->
 
 
 
 
 
 
-  <!-- ------------------------------------------------------------------------ -->
-  <!-- Highlight Section begins here -->
-  <section id="highlight" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Highlight</h2>
-            <p class="text-white-50">This page is about all the events that the organization does for people and students. The Union Square foundation has multiple event and fundraisers to fund for students going to college.</p>
-                </head>
+      <!-- ------------------------------------------------------------------------ -->
+      <!-- Highlight Section begins here -->
+      <section id="highlight" class="about-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-white mb-4">Highlight</h2>
+              <p class="text-white-50">This page is about all the events that the organization does for people and students. The Union Square foundation
+                has multiple event and fundraisers to fund for students going to college.</p>
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- Highlight Section ends here -->
+      <!-- ------------------------------------------------------------------------ -->
+
+
+
+
+
+
+
+
+
+
+      <!-- ==================================================================================== -->
+      <!-- ==================================================================================== -->
+      <!-- ==================================================================================== -->
+      <!-- JavaScript Dependencies start here -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.js"></script>
+
+      <!-- Custom scripts for this template -->
+      <script src="js/grayscale.js"></script>
+      <!-- JavaScript Dependencies end here -->
+      <!-- ==================================================================================== -->
+      <!-- ==================================================================================== -->
+      <!-- ==================================================================================== -->
+
+
     <!-- Highlight Section ends here -->
     <!-- ------------------------------------------------------------------------ -->
 
@@ -235,7 +347,64 @@
   <!-- ==================================================================================== -->
   <!-- ==================================================================================== -->
   <!-- ==================================================================================== -->
-
+ 
+ 
+  <div class="month"> 
+    <ul>
+      <li class="prev">&#10094;</li>
+      <li class="next">&#10095;</li>
+      <li>August<br><span style="font-size:18px">2019</span></li>
+    </ul>
+  </div>
+  
+  <ul class="weekdays">
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Saturday</li>
+    <li>Sunday</li>
+  </ul>
+  
+  <ul class="days"> 
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li><span class="active">12</span></li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    
+    
+    
+    
+    
+  </ul>
 
 
 
