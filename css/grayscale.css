@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/logo.png);
+  background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
@@ -17,14 +17,15 @@ body {
 }
 .registration {
   background: transparent !important;
+  background-color: #013cff;
 }
 .inputGroupContainer {
   padding-bottom: 24px !important;
 }
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
-  ali
+  background-color: #013cff;
+
 }
 
 #mainNav .navbar-toggler {
