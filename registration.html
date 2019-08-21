@@ -28,157 +28,122 @@
 
 
 
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #0c08ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #0c08ff;
+}
 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
+</style>
 
+</style>
+</head>
 
 <body class="registration">
-<div class="container">
-       <table class="table table-striped">
-          <tbody>
-             <tr>
-                <td colspan="1">
-                   <form class="well form-horizontal">
-                      <fieldset>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Full Name</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Address Line 1</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Address Line 2</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">City</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="city" placeholder="City" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">State/Province/Region</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Postal Code/ZIP</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Country</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group">
-                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select class="selectpicker form-control">
-                                     <option>A really long option to push the menu over the edget</option>
-                                  </select>
-                               </div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Email</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Phone Number</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         <div class="form-group">
-                              <label class="col-md-4 control-label">Phone Number</label>
-                              <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                      </fieldset>
-                   </form>
-                </td>
-                <td colspan="1">
-                   <form class="well form-horizontal">
-                      <fieldset>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">Do you have any relatives that are Masons? </label>
-                            <div class="col-md-8 inputGroupContainer">
-                              <div class="input-group"><span class="input-group-addon"><input type="radio" name="relatives" required>Yes</span></div>
-                              <div class="input-group"><span class="input-group-addon"><input type="radio" name="relatives">No</span></div>
-                               </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">If yes, provide their name, Lodge, and Jurisdiction:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">High School/College:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">GPA:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="city" placeholder="City" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label"style="max-width: 100%">GPA Scale:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">Class Rank: </label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="_____ of _____" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label" style="max-width: 100%">SAT Math:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="Score" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">SAT EBRW:</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Score" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Phone Number</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         <div class="form-group">
-                              <label class="col-md-4 control-label">Phone Number</label>
-                              <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
-                              </div>
-                         </div>
-                      </fieldset>
-                   </form>
-                </td>
-             </tr>
-          </tbody>
-       </table>
+  <h3>Application Form 
+  </h3>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">Address</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">City</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">State</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">Zip Code</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">Do you have any relatives that are Masons?</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">If yes, provide their name, Lodge, and Jurisdiction</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">High School/College</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">GPA</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="lname">GPA Scale</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">Class Rank _____ of _____</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">SAT Math</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="lname">SAT EBRW</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Activities</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+      <br>
+
+      <label for="subject">Roles and Responsibilities</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+      <br>
+
+      <label for="subject">Honors, Awards, and, Achievements</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+</form>
+    </div  >
+      </form>
+       </td>
+         </tr>
+       </tbody>
+      </table>
     </div>
 </body>
